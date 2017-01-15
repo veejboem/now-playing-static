@@ -220,41 +220,62 @@ ul.site-nav-list {
   display: block;
 }
 
-.footer-nav {
+.site-footer {
   background-color: black;
   padding: 1em;
   color: white;
-}
-
-.site-footer {
   margin-left: 110px;
 }
 
-footer.site-footer {
-    display: none;
-  }
+
 }
 
 @media (min-width: 992px) {
-  /*p:first-of-type {
-    display: block;
+
+
+main {
+      margin-left: 110px;
+  }
+
+.movie {
+  float: left;
+  width: 33.3333%;
+  /*margin: 0;*/
+}
+
+.movie-poster {
+  display: block;
+  width: 100%;
+}
+
+.movie-backdrop {
+  display: none;
 }
 
 .movie-overview {
- display: none;
+  display: none;
   }
-}*/
 
+.movie:first-child {
+  float: left;
+  width: 100%;
+}
 
+.movie:first-child .movie-poster {
+  display: none;
+}
 
-
-
-/*@media (max-width: 991px) {
-.movie-overview:first-child {
+.movie:first-child .movie-backdrop, .movie:first-child .movie-overview {
   display: block;
-  }
-}*/
+  width: 100%;
+}
 
+.site-footer {
+  width: 100%;
+  clear: left;
+  display: inline-block;
+  }
+}
 
 /*
   The :last-child pseudo-selector lets you select only the last element
@@ -264,7 +285,6 @@ footer.site-footer {
 .footer-nav-item:last-child {
   margin-right: 0;
 }
-
 
 .about {
   background-color: #333333;
