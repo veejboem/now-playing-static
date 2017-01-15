@@ -53,7 +53,7 @@ figure {
   width: 80px;
   height: 80px;
   margin: 0;
-  z-index: 100;
+  z-index: 120;
 }
 
 .site-nav {
@@ -100,6 +100,7 @@ figure {
 }
 
 
+
 /* MOVIE styles */
 .movie {
   position: relative;
@@ -126,6 +127,7 @@ figure {
   width: 100%;
   padding: 1em;
   color: #ffffff;
+
 
   /*
     Linear gradients are a bit of an advanced CSS3 feature.
@@ -167,6 +169,7 @@ figure {
   text-align: center;
 }
 
+
 .footer-nav {
   padding: 1em;
 }
@@ -175,6 +178,83 @@ figure {
   display: inline-block;
   margin-right: 0.5em;
 }
+
+
+@media (min-width:  768px) {
+  main {
+  margin-left: 110px;
+}
+
+.site-logo {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  z-index: 120;
+}
+
+.site-nav {
+  height: 100%;
+  width: 110px;
+}
+
+.site-nav-item {
+  float: left;
+  width: 100%;
+  length: 100%;
+  margin-top: 5px;
+}
+
+.site-nav-list {
+  text-align: center;
+  margin-top: 6em;
+}
+
+ul.site-nav-list {
+  margin-top: 90px;
+}
+
+.movie-overview {
+  display: block;
+}
+
+.footer-nav {
+  background-color: black;
+  padding: 1em;
+  color: white;
+}
+
+.site-footer {
+  margin-left: 110px;
+}
+
+footer.site-footer {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  /*p:first-of-type {
+    display: block;
+}
+
+.movie-overview {
+ display: none;
+  }
+}*/
+
+
+
+
+
+/*@media (max-width: 991px) {
+.movie-overview:first-child {
+  display: block;
+  }
+}*/
+
 
 /*
   The :last-child pseudo-selector lets you select only the last element
